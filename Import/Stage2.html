@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stage2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(136, 36, 61);
+        }
+        
+        #bandeau {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            height: 40px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        #bandeau a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        #bandeau a:hover {
+            background-color: #555;
+        }
+        
+        .profile-image {
+            width: 800px;
+            height: 500px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 50px auto;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .text-block {
+            width: 400px;
+            height: auto;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+        
+        .text-block p {
+            font-size: 18px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .section-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            width: 150px;
+            text-align: center;
+        }
+        
+        .section-button:hover {
+            background-color: #0004ff;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Changed position to relative */
+            width: 100%;
+            z-index: 1; /* Added z-index to make sure it appears above other elements */
+        }
+        
+        
+        .page-container {
+            padding-top: 80px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: calc(100vh - 100px); /* Updated min-height to account for the footer's height */
+        }
+        
+        h2 {
+            font-size: 36px;
+            margin: 20px 0;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="bandeau">
+        <!-- Add content for the banner if needed -->
+    </div>
+    
+    <div class="page-container">
+            <img src="Stage2/Logo-WALPY.png" alt="Image de profil">
+        </div>
+    
+        <h2>WALPY</h2>
+    
+        <div class="text-block">
+            <p>Ceci est mon stage que j'ai effectué en deuxième année.</p>
+            <p>J'ai effectué mon stage du 03/01/23 au 03/02/23 dans l'entreprise WALPY, située au 20 Quai Jules Chagot, 71300 Montceau-les-Mines.  </p>
+            <p>Sur cette page, vous trouverez la documentation relative à mon activité principale lors de mon stage ainsi que le fichier qui liste les machines créées.</p>
+            <a class="section-button" href="Stage2/Schéma Global + Walpy Montceau.pdf">Schéma Global + Walpy Montceau</a>
+            <a class="section-button" href="Stage2/liste VM.pdf">Liste des machines Virtuelles</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; Copyright Romain Larue. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

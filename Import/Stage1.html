@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stage1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(31, 38, 66);
+        }
+        
+        #bandeau {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            height: 40px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1; /* Augmenter la valeur du z-index pour afficher le bandeau au-dessus du contenu */
+        }
+        
+        #bandeau a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        #bandeau a:hover {
+            background-color: #555;
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 50px auto;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .text-block {
+            width: 400px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+        
+        .text-block p {
+            font-size: 18px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .section-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            width: 220px; /* Ajuster la largeur du bouton pour éviter les retours à la ligne */
+            text-align: center;
+        }
+        
+        .section-button:hover {
+            background-color: #0004ff;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        /* Ajout des styles supplémentaires */
+        .page-container {
+            padding-top: 60px; /* Réduire l'espace pour le bandeau afin d'améliorer l'affichage */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: calc(100vh - 100px);
+        }
+        
+        h2 {
+            font-size: 28px; /* Réduire légèrement la taille du titre */
+            margin: 20px 0;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="bandeau"></div>
+    
+    <div class="page-container">
+        <div class="profile-image">
+            <img src="Stage1/Logo-UDAF.png" alt="Image de profil">
+        </div>
+    
+        <h2>U.D.A.F (Union départementale des associations familiales)</h2>
+    
+        <div class="text-block">
+            <p>Ceci est mon stage que j'ai effectué en première année.</p>
+            <p>J'ai effectué mon stage du 30/05/22 au 01/07/22 dans l'entreprise U.D.A.F, située au 13 Rue Georges Maugey, 71100 Chalon-sur-Saône.</p>
+            <p>Sur cette page, vous trouverez la documentation relative à mon activité principale lors de mon stage.</p>
+            <a class="section-button" href="Stage1/Installation + configuration de pfsense.pdf">Mode opératoire de pfsense</a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; Copyright Romain Larue. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

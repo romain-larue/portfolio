@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        /* Styles globaux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; /* Couleur de fond gris clair */
+        }
+        
+        /* Style du bandeau */
+        #bandeau {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            height: 40px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        /* Style des liens du bandeau */
+        #bandeau a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        /* Style des liens du bandeau au survol */
+        #bandeau a:hover {
+            background-color: #555;
+        }
+        
+        /* Style des sections */
+        section {
+            padding: 50px;
+            text-align: center;
+            margin-top: 120px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        section h2 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        section p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        
+        /* Style des boutons */
+        .section-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .section-button:hover {
+            background-color: #555;
+        }
+        
+        /* Style de l'image de profil */
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Style du bloc de texte carré */
+        .text-block {
+            width: 400px;
+            height: 400px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Style du pied de page */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="bandeau">
+        <a href="#section-accueil">Accueil</a>
+        <a href="#section-a-propos">À propos</a>
+        <a href="#section-stage">Stage</a>
+        <a href="#section-veille-informatique">Veille Informatique</a>
+        <a href="#section-contact">Contact</a>
+    </div>
+    
+    <section id="section-accueil">
+        <h2>Accueil</h2>
+        
+        <div class="profile-image">
+            <img src="Import/Profil/profil-image.jpg" alt="Photo de profil">
+        </div>
+        
+        <div class="text-block">
+            <h3 style="font-size: 24px;">SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</h3>
+            <p>La spécialité SISR du BTS SIO se concentre sur les aspects liés aux infrastructures, systèmes et réseaux informatiques. Les étudiants acquièrent des compétences techniques et pratiques pour assurer le bon fonctionnement des infrastructures informatiques, le déploiement et la maintenance des systèmes d'exploitation, ainsi que la gestion des réseaux.</p>
+        </div>
+    </section>
+    
+    <section id="section-a-propos">
+        <h2>À propos</h2>
+        
+        <p>Je suis Romain, un étudiant passionné d'informatique. Je poursuis actuellement mes études en BTS SIO (Services Informatiques aux Organisations) avec une spécialisation en SISR (Solutions d'Infrastructure, Systèmes et Réseaux).</p>
+        
+        <a href="Import/CV.pdf" class="section-button">Mon CV</a>
+    </section>
+    
+    <section id="section-stage">
+        <h2>Stage</h2>
+        
+        <p>Voici mes deux périodes de stage que j'ai effectuées au cours des deux années en BTS SIO.</p>
+        
+        <a href="Import/Stage1.html" class="section-button">Stage Première Année</a>
+        <a href="Import/Stage2.html" class="section-button">Stage Deuxième Année</a>
+    </section>
+    
+    <section id="section-veille-informatique">
+        <h2>Veille Informatique</h2>
+        
+        <p>Voici toute ma veille informatique.</p>
+        
+        <a href="Import/Veille Informatique.html" class="section-button">Voir ma veille</a>
+    </section>
+    
+    <section id="section-contact">
+        <h2>Contact</h2>
+        
+        <p style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <img src="Import/Contact/Mail.png" alt="Icône de Courrier électronique"> romain71@live.fr<br>
+            <img src="Import/Contact/Home.png" alt="Icône de maison"> 6 rue Lucie Aubrac, 71300 Montceau les Mines<br>
+            <img src="Import/Contact/Phone.png" alt="Icône de téléphone"> 0698037916
+        </p>
+    </section>
+    
+    <footer>
+        <p>&copy; Copyright Romain Larue. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

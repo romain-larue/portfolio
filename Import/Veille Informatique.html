@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veille Informatique</title>
+    <style>
+        /* Styles globaux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255); /* Couleur de fond modifiée en vert */
+        }
+        
+        /* Style du bandeau */
+        #bandeau {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            height: 60px; /* Hauteur du bandeau augmentée */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        /* Style des liens du bandeau */
+        #bandeau a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        /* Style des liens du bandeau au survol */
+        #bandeau a:hover {
+            background-color: #555;
+        }
+        
+        /* Style des sections */
+        section {
+            padding: 50px;
+            text-align: center;
+            margin-top: 60px; /* Marge supérieure correspondant à la hauteur du bandeau */
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        section h2 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        section p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        
+        /* Style des boutons */
+        .section-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .section-button:hover {
+            background-color: #555;
+        }
+        
+        /* Style de l'image de profil */
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Style du bloc de texte carré */
+        .text-block {
+            width: 400px;
+            height: 400px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Style du pied de page */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="bandeau">
+    </div>
+    
+    <section id="section-veille-informatique">
+        <h2>Veille Informatique</h2>
+        
+        <p>Voici toute l'actualité informatique de la veille informatique..</p>
+        
+        <a href="https://www.it-connect.fr/actualites/actu-securite/" class="section-button">IT CONNECT</a>
+        <a href="https://casques-vr.com/news/" class="section-button">Réalité Virtuelle</a>
+        <a href="https://www.lemondeinformatique.fr/intelligence-artificielle-154.html" class="section-button">Intelligence Artificielle</a>
+        <a href="https://www.lemondeinformatique.fr/securite-informatique-3.html" class="section-button">Sécurité Informatique</a>
+        <a href="https://www.ouest-france.fr/societe/cyberattaque/" class="section-button">Cyberattaque</a>
+    </section>
+    
+    <footer>
+        <p>&copy; Copyright Romain Larue. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
